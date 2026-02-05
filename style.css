@@ -526,7 +526,7 @@ footer {
   }
 
   .hero {
-    padding: 140px 5% 80px;
+    padding: 140px 0% 80px;
   }
 
   .hero h1 {
@@ -543,4 +543,5 @@ footer {
   }
 
 }
+
 
