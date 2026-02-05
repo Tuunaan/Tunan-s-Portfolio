@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
 }
 
 body {
@@ -145,9 +145,9 @@ a { text-decoration: none; color: inherit; }
 }
 
 /* Section common */
-.section {
+/* .section {
   padding: 120px 5%;
-}
+} */
 
 .section-header {
   text-align: center;
@@ -550,6 +550,7 @@ footer {
   }
 
 }
+
 
 
 
