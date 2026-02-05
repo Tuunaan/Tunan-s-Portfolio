@@ -4,13 +4,38 @@
   box-sizing: border-box;
 }
 
-body {
+
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;   
+  font-family: 'Inter', sans-serif;
+  background: #0a0a0a;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+.section{
+  width: 100%;
+  margin: 0;
+  padding-left: 5vw;            
+  padding-right: 5vw;          
+  box-sizing: border-box;
+}
+
+
+
+
+/* body {
   font-family: 'Inter', sans-serif;
   background: #0a0a0a;
   color: #e0e0e0;
   line-height: 1.6;
   overflow-x: hidden;
-}
+} */
 
 h1, h2, h3, h4 {
   font-family: 'Poppins', sans-serif;
@@ -93,9 +118,16 @@ a { text-decoration: none; color: inherit; }
 .hero {
   min-height: 100vh;
   background: linear-gradient(135deg, #140043 0%, #000000 100%);
-  padding: 180px 5% 100px;
+  /* padding: 180px 5% 100px; */
+  padding-bottom: 180px;
+  padding-bottom: 100px;
   /* text-align: center; */
   /* position: relative; */
+  width: 100%;
+  margin: 0;
+  padding-left: 5vw;            
+  padding-right: 5vw;          
+  box-sizing: border-box
 }
 
 .hero h1 {
@@ -384,10 +416,16 @@ footer {
 /* Contact Form */
 .contact-form {
   background: rgba(30,30,40,0.6);
-  padding: 50px;
+  /* padding: 50px; */
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(10px);
+
+  width: 100%;
+  margin: 0;
+  padding-left: 5vw;            
+  padding-right: 5vw;          
+  box-sizing: border-box;
 }
 
 .form-group {
@@ -543,6 +581,7 @@ footer {
   }
 
 }
+
 
 
 
