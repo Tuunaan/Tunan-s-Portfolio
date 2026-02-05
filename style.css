@@ -103,15 +103,17 @@ a { text-decoration: none; color: inherit; }
     position: relative;           
     overflow: hidden;             
 }
-
+.hero-content {
+    position: relative;
+    z-index: 2;  
+}
 .hero h1 {
     font-size: clamp(5rem, 10vw, 7rem);  
     line-height: 0.9;
     margin-bottom: 25px;
 }
-
 .hero h1 span {
-    color: #00ffff;               /* ← Consistent cyan accent */
+    color: #00ffff;               
 }
 .tags {
     display: flex;
@@ -803,3 +805,4 @@ footer {
     50%  { text-shadow:  2px -2px 0 #ff00c1, -2px  2px 0 #00ffff; }
     100% { text-shadow: -2px -2px 0 #ff00c1,  2px  2px 0 #00ffff; }
 }
+
