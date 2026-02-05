@@ -532,9 +532,9 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  .hero {
+  /* .hero {
     padding: 140px 5% 80px;
-  }
+  } */
 
   .hero h1 {
     font-size: 3rem;
@@ -550,6 +550,7 @@ footer {
   }
 
 }
+
 
 
 
