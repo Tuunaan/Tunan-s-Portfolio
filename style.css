@@ -526,11 +526,11 @@ footer {
   }
 
   .hero {
-    padding: 140px 0% 80px;
+    padding: 140px 5% 80px;
   }
 
   .hero h1 {
-    font-size: 5rem;
+    font-size: 2rem;
   }
 
   .contact-container {
@@ -543,5 +543,6 @@ footer {
   }
 
 }
+
 
 
