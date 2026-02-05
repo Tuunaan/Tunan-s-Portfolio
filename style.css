@@ -145,9 +145,10 @@ a { text-decoration: none; color: inherit; }
 }
 
 /* Section common */
-/* .section {
+.section {
+  margin-right:  120px;
   padding: 120px 5%;
-} */
+}
 
 .section-header {
   text-align: center;
@@ -550,6 +551,7 @@ footer {
   }
 
 }
+
 
 
 
