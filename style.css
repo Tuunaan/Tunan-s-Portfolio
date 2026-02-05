@@ -99,9 +99,12 @@ a { text-decoration: none; color: inherit; }
   /* position: relative; */
   padding-bottom: 180px;
   padding-bottom: 100px;
-  padding-left: 5%
+  
   width: 100%;
   margin: 0;
+  
+  margin-left: 5%
+  
   padding-left: 5vw;            
   padding-right: 5vw;          
   box-sizing: border-box
@@ -558,6 +561,7 @@ footer {
   }
 
 }
+
 
 
 
