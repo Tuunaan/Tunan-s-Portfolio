@@ -93,21 +93,10 @@ a { text-decoration: none; color: inherit; }
 .hero {
   min-height: 100vh;
   background: linear-gradient(135deg, #140043 0%, #000000 100%);
-  /* padding: 180px 1% 100px; */
+  padding: 180px 1% 100px;
 
   /* text-align: center; */
   /* position: relative; */
-  padding-bottom: 180px;
-  padding-bottom: 100px;
-  
-  width: 100%;
-  margin: 0;
-  
-  margin-right: 5%
-  
-  padding-left: 5vw;            
-  padding-right: 5vw;          
-  box-sizing: border-box
 }
 
 .hero h1 {
@@ -561,6 +550,7 @@ footer {
   }
 
 }
+
 
 
 
