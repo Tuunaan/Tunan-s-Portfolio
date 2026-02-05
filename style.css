@@ -502,7 +502,7 @@ footer {
 } */
 
 
-@media (max-width: 750px) {
+@media (max-width: 800px) {
   .navbar {
     flex-direction: row;              
     justify-content: flex-start;    
@@ -581,6 +581,7 @@ footer {
   }
 
 }
+
 
 
 
