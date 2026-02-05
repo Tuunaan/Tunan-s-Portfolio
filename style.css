@@ -446,7 +446,78 @@ footer {
   font-size: 1.2rem;
 }
 
+/* Education Section */
+.education {
+    padding: 140px 5%;          /* Slightly more breathing room */
+}
 
+.education-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;                 /* Increased gap between photo and content */
+    align-items: start;
+    max-width: 1300px;          /* Slightly wider container */
+    margin: 0 auto;
+}
+
+.education-photo img {
+    width: 100%;
+    max-width: 520px;           /* ← Made the photo noticeably larger (was ~420px) */
+    border-radius: 24px;
+    border: 4px solid rgba(107, 255, 245, 0.45);
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.55);
+    object-fit: cover;
+}
+
+/* Right side - card list (larger text & padding) */
+.education-content {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;                  /* More space between cards */
+}
+
+.education-card {
+    background: rgba(30, 30, 40, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 32px 40px;         /* ← Larger padding inside cards */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.education-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(107, 255, 245, 0.4);
+    box-shadow: 0 16px 40px rgba(107, 144, 255, 0.18);
+}
+
+.education-item h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;         /* ← Bigger degree title (was 1.45rem) */
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    color: #ffffff;
+}
+
+.education-item p {
+    font-size: 1rem;          /* ← Bigger institution name (was 1.05rem) */
+    color: #cccccc;
+    margin: 0;
+}
+
+.education-year span {
+    background: rgba(107, 255, 245, 0.15);
+    color: #6bfff5;
+    font-weight: 700;
+    font-size: 1rem;          /* ← Slightly larger badge text */
+    padding: 10px 22px;
+    border-radius: 50px;
+    white-space: nowrap;
+    border: 1px solid rgba(107, 255, 245, 0.3);
+}
 
 /* @media (max-width: 768px) {
   .navbar { flex-direction: column; padding-left: 20px; }
@@ -548,8 +619,30 @@ footer {
     padding-right: 5vw;          
     box-sizing: border-box;
   }
+    .education-grid {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+    .education-photo img {
+        max-width: 360px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .education-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        padding: 24px;
+    }
+
+    .education-year span {
+        align-self: flex-start;
+    }
 
 }
+
 
 
 
