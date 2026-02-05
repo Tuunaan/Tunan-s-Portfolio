@@ -1,312 +1,427 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Humayera Tabassum Tunan</title>
     <link rel="stylesheet" href="style.css" />
+    
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- AOS - Animate on Scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </head>
 
 <body>
 
-    <!-- Header / Hero -->
-        <nav class="navbar">
-            <div class="logo">Tunan's Portfolio</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#thesis-projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li> 
-            </ul>
-        </nav>
-    <header class="hero">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">Tunan's Portfolio</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#thesis-projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-
-        <div class="hero-content" id="home">
-            <h1>Humayera Tabassum <br><span>Tunan</span></h1>
-            <div class="tags">
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div id="particles-js"></div>
+        <div class="hero-content">
+            <h1 data-aos="zoom-in" data-aos-duration="1200">Humayera Tabassum <span>Tunan</span></h1>
+            
+            <div class="tags" data-aos="fade-up" data-aos-delay="300">
                 <span>Quality Assurance</span>
                 <span>Software Development</span>
                 <span>Data Analysis</span>
                 <span>Cybersecurity</span>
                 <span>AI Engineering</span>
             </div>
-            <p class="intro">
+
+            <p class="intro" data-aos="fade-up" data-aos-delay="500">
                 Welcome to my portfolio! I'm Humayera Tabassum Tunan, a hardworking, disciplined, and 
-                    detail-oriented CSE graduate with a strong 
-                    work ethic and attention to detail.
+                detail-oriented CSE graduate with a strong work ethic and attention to detail.
             </p>
-            <a href="#contact" class="btn primary">Hire Me →</a>
+
+            <a href="#contact" class="btn primary" data-aos="bounce" data-aos-delay="700">Hire Me →</a>
         </div>
     </header>
 
- 
     <!-- About -->
     <section class="section about" id="about">
-        <div class="section-header">
+        <div class="section-header" data-aos="fade-up">
             <h2>✦ About Me</h2>
         </div>
         <div class="about-grid">
-            <div class="about-text">
+            <div class="about-text" data-aos="fade-right" data-aos-delay="200">
                 <h1>Bachelor of Science in Computer Science and Engineering</h1>
                 <p>
-                    I am passionate about software quality assurance,
-                    data analysis, AI LLM research, cybersecurity, 
-                    and emerging technologies, I am committed 
-                    to continuous improvement and professional excellence. 
-                    With strong analytical and problem-solving skills, 
-                    I enjoy taking on challenges and contributing positively 
-                    to team success. I adapt quickly to new environments and 
-                    strive to grow both personally and professionally.</p>
-                <a href="Tunan's Resume.pdf" class="btn outline">Download Resume ↓</a>
+                    I am passionate about software quality assurance, data analysis, AI LLM research, 
+                    cybersecurity, and emerging technologies. I am committed to continuous improvement 
+                    and professional excellence. With strong analytical and problem-solving skills, 
+                    I enjoy taking on challenges and contributing positively to team success. 
+                    I adapt quickly to new environments and strive to grow both personally and professionally.
+                </p>
+                <a href="Tunan's Resume.pdf" class="btn outline" download>Download Resume ↓</a>
             </div>
-            <div class="about-photo">
-                <img src="images/IntroPic.jpg"
-                    alt="Tunan">
+            <div class="about-photo" data-aos="fade-left" data-aos-delay="400">
+                <img src="images/IntroPic.jpg" alt="Tunan">
             </div>
         </div>
-<!-- Education -->
-<section class="section education" id="education">
-    <div class="section-header">
-        <h2>✦ Education</h2>
-    </div>
+    </section>
 
-    <div class="education-grid">
-        <!-- Left: Photo -->
-        <div class="education-photo">
-            <img src="images/Graduation.jpg" alt="Graduation">
+    <!-- Education -->
+    <section class="section education" id="education">
+        <div class="section-header" data-aos="fade-up">
+            <h2>✦ Education</h2>
         </div>
-
-        <!-- Right: Education Cards -->
-        <div class="education-content">
-            <div class="education-card">
-                <div class="education-item">
-                    <h3>BSc in Computer Science and Engineering</h3>
-                    <h4>BRAC University</h4>
-                    <p>2021 - 2025</p>
+        <div class="education-grid">
+            <div class="education-photo" data-aos="fade-right" data-aos-delay="200">
+                <img src="images/Graduation.jpg" alt="Graduation">
+            </div>
+            <div class="education-content" data-aos="fade-left" data-aos-delay="300">
+                <div class="education-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="education-item">
+                        <h3>BSc in Computer Science and Engineering</h3>
+                        <h4>BRAC University</h4>
+                        <p>2021 - 2025</p>
+                    </div>
+                    <div class="education-year">
+                        <span>3.48 / 4.00</span>
+                    </div>
                 </div>
-                <div class="education-year">
-                    <span>3.48 / 4.00</span>
+
+                <div class="education-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="education-item">
+                        <h3>Higher Secondary Certificate</h3>
+                        <h4>BAF Shaheen College Dhaka</h4>
+                        <p>2019 - 2020</p>
+                    </div>
+                    <div class="education-year">
+                        <span>5.00 / 5.00</span>
+                    </div>
+                </div>
+
+                <div class="education-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="education-item">
+                        <h3>Secondary School Certificate</h3>
+                        <h4>BAF Shaheen College Dhaka</h4>
+                        <p>2017 - 2018</p>
+                    </div>
+                    <div class="education-year">
+                        <span>5.00 / 5.00</span>
+                    </div>
                 </div>
             </div>
-
-            <div class="education-card">
-                <div class="education-item">
-                    <h3>Higher Secondary Certificate</h3>
-                    <h4>BAF Shaheen College Dhaka</h4>
-                    <p>2019 - 2020</p>
-                </div>
-                <div class="education-year">
-                    <span>5.00 / 5.00</span>
-                </div>
-            </div>
-
-            <div class="education-card">
-                <div class="education-item">
-                    <h3>Secondary School Certificate</h3>
-                    <h4>BAF Shaheen College Dhaka</h4>
-                    <p>2017 - 2018</p>
-                </div>
-                <div class="education-year">
-                    <span>5.00 / 5.00</span>
-                </div>
-            </div>
-
         </div>
-    </div>
-</section>
+    </section>
 
-
-   <!-- Recent Projects -->
-    <section class="section projects" id="experience">
-        <div class="section-header">
+    <!-- Experience -->
+    <section class="section experience" id="experience">
+        <div class="section-header" data-aos="fade-up">
             <h2>✦ Experience</h2>
-            <!-- <a href="#" class="explore">Explore Work →</a> -->
+        </div>
+        <div class="experience-grid">
+            <div class="experience-card" data-aos="flip-left" data-aos-delay="200">
+                <div class="mockup">
+                    <img src="images/Mentorship.png" alt="Mentorship">
+                </div>
+                <p class="experience-title">Banglalink's Womentor Mentorship</p>
+                <p class="experience-meta">Mentee • 15 Dec, 2024</p>
+            </div>
+
+            <div class="experience-card" data-aos="flip-right" data-aos-delay="400">
+                <div class="mockup">
+                    <img src="images/Intenship.jpeg" alt="Internship">
+                </div>
+                <p class="experience-title">Banglalink's Digitalist Internship</p>
+                <p class="experience-meta">Cybersecurity Intern • 17 Aug, 2025</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications -->
+    <section class="section certificates" id="certifications"> 
+        <div class="section-header" data-aos="fade-up">
+            <h2>✦ Certifications</h2>
+            <!-- <h3>Experience that secures. Impact that matters.</h3> -->
+            <a href="https://www.linkedin.com/in/humayera-tabassum-tunan-b84207226/" class="btn primary" data-aos="bounce">View in Linkedin →</a>
+        </div>
+        <div class="certificates-grid">
+            <div class="certificate-card" data-aos="fade-up" data-aos-delay="100">
+                <h2>Ethical Hacking Network Scan Nmap & Nessus, Network Security</h2>
+                <div class="certificate-photo"><img src="images/Ethical Hacking.jpg"></div>
+            </div>
+            <div class="certificate-card" data-aos="fade-up" data-aos-delay="200">
+                <h2>Fundamentals of Quality Assurance Engineer</h2>
+                <div class="certificate-photo"><img src="images/SQA.jpg"></div>
+            </div>
+            <div class="certificate-card highlight" data-aos="fade-up" data-aos-delay="300">
+                <h2>AI Automation: Build LLM Apps & AI-Agents with n8n & APIs</h2>
+                <div class="certificate-photo"><img src="images/AI Automation, Build LLM Apps & AI Agents with n8n and APIs.jpg"></div>
+            </div>
+            <div class="certificate-card" data-aos="fade-up" data-aos-delay="100">
+                <h2>Introduction to Cloud Computing on AWS for Beginners</h2>
+                <div class="certificate-photo"><img src="images/Introduction to Cloud Computing on AWS for Beginners [2025].jpg"></div>
+            </div>
+            <div class="certificate-card" data-aos="fade-up" data-aos-delay="200">
+                <h2>The Complete Prompt Engineering for Al Bootcamp</h2>
+                <div class="certificate-photo"><img src="images/Promt Engineering.jpg"></div>
+            </div>
+            <div class="certificate-card highlight" data-aos="fade-up" data-aos-delay="300">
+                <h2>SQL (Basics)</h2>
+                <div class="certificate-photo"><img src="images/sqlbasic.png"></div>
+            </div>
+                        <div class="certificate-card" data-aos="fade-up" data-aos-delay="200">
+                <h2>SQL (Intermediate)</h2>
+                <div class="certificate-photo"><img src="images/sqlin.png"></div>
+            </div>
+            <div class="certificate-card highlight" data-aos="fade-up" data-aos-delay="300">
+                <h2>Python (Basic)</h2>
+                <div class="certificate-photo"><img src="images/pythonbasic.png"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section skills" id="skills">
+        <div class="section-header" data-aos="fade-up">
+            <h2>✦ Skills</h2>
+            <p></p>
+        </div>
+
+        <div class="skills-container">
+            <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                <div class="skill-header">
+                    <h3>Programming Languages</h3>
+                </div>
+                <div class="skill-subs">
+                    <span>Python</span><span>C</span><span>Java</span><span>SQL</span><span>Assembly</span><span>Verilog</span>
+                </div>
+            </div>
+
+            <div class="skill-category" data-aos="fade-up" data-aos-delay="150">
+                <div class="skill-header">
+                    <h3>Web Development</h3>
+                </div>
+                <div class="skill-subs">
+                    <span>HTML</span><span>CSS</span><span>JavaScript</span><span>MERN Stack</span><span>PHP</span>
+                </div>
+            </div>
+
+            <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                <div class="skill-header">
+                    <h3>AI / Machine Learning</h3>
+                </div>
+                <div class="skill-subs">
+                    <span>Large Language Models (LLMs)</span><span>AI Model Training & Fine-tuning</span>
+                    <span>NLP (Text Processing)</span><span>Dataset Preparation</span>
+                    <span>PDF Text Extraction</span><span>Chatbot Development</span>
+                </div>
+            </div>
+
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="250">
+            <div class="skill-header">
+                <h3>Data Handling</h3>
+            </div>
+            <div class="skill-subs">
+                <span>Data Cleaning & Preprocessing</span>
+                <span>Feature Engineering (Basic)</span>
+                <span>Dataset Management</span>
+            </div>
+        </div>
+
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+            <div class="skill-header">
+                <h3>Security Tools & Practices</h3>
+            </div>
+            <div class="skill-subs">
+                <span>Tenable Nessus</span>
+                <span>System Hardening (CIS Benchmarks)</span>
+                <span>Risk Assessment & Reporting</span>
+                <span>Security Auditing</span>
+            </div>
+        </div>
+
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="350">
+            <div class="skill-header">
+                <h3>Operating Systems & Networks</h3>
+            </div>
+            <div class="skill-subs">
+                <span>Windows Security</span>
+                <span>Linux Security</span>
+                <span>Basic Network Security</span>
+                <span>Wireshark</span>
+            </div>
+        </div>
+
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
+            <div class="skill-header">
+                <h3>Software Development</h3>
+            </div>
+            <div class="skill-subs">
+                <span>Object-Oriented Programming</span>
+                <span>MVC Architecture</span>
+                <span>Design Patterns</span>
+                <span>Algorithms & Data Structures</span>
+            </div>
+        </div>
+
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="450">
+            <div class="skill-header">
+                <h3>Software Testing & QA</h3>
+            </div>
+            <div class="skill-subs">
+                <span>Manual Testing</span>
+                <span>Black-box Testing</span>
+                <span>Test Case Writing</span>
+                <span>Bug Reporting</span>
+                <span>SQA Fundamentals</span>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Projects / Thesis -->
+    <section class="section projects" id="thesis-projects">
+        <div class="section-header" data-aos="fade-up">
+            <h2>✦ Projects</h2>
         </div>
         <div class="project-grid">
-            <div class="project-card">
-                <div class="mockup">
-                    <img src="images/Mentorship.png"
-                        alt="MacBook Mockup">
-                </div>
-                <p class="project-title">Banglalink's Womentor Mentorship</p>
-                <p class="project-meta">Mentee • 15 Dec, 2024</p>
-                <!-- <a href="#" class="btn small">View Project →</a> -->
-            </div>
-            <div class="project-card">
-                <div class="mockup">
-                    <img src="images/Intenship.jpeg"
-                        alt="Laptop Mockup">
-                </div>
-                <p class="project-title">Banglalink's Digitalist Internship</p>
-                <p class="project-meta">Cybersecurity Intern • 17 Aug, 2025</p>
-                <!-- <a href="#" class="btn small">View Project →</a> -->
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Services -->
-    <section class="section services" id="certifications">
-        <div class="section-header">
-            <h2>✦ Certifications</h2>
-            <h3>Experience that secures. Impact that matters.</h3>
-            <a href="https://www.linkedin.com/in/humayera-tabassum-tunan-b84207226/" class="btn primary">View in Linkedin →</a>
-        </div>
-        <div class="services-grid">
-            <div class="service-card">
-                <h2>Ethical Hacking Network Scan Nmap & Nessus, Network Security</h2>
-                <p>✦</p>
-                <div class="certificate-photo"><img src="images/Ethical Hacking.jpg"></div>
-                <!-- <a href="#">→</a> -->
-            </div>
-            <div class="service-card">
-                <h2>Fundamentals of Quality Assurance Engineer</h2>
-                <p>✦</p>
-                <div class="certificate-photo"><img src="images/SQA.jpg"></div>
-                <!-- <a href="#">→</a> -->
-            </div>
-            <div class="service-card highlight">
-                <h2>Al Automation: Build LLM Apps & Al-Agents with n8n & APIs</h2>
-                <p>✦</p>
-                <div class="certificate-photo"><img src="images/AI Automation, Build LLM Apps & AI Agents with n8n and APIs.jpg"></div>
-                <!-- <a href="#">→</a> -->
-            </div>
-            <div class="service-card">
-                <h2>Introduction to Cloud Computing on AWS for Beginners</h2>
-                <p>✦</p>
-                <div class="certificate-photo"><img src="images/Introduction to Cloud Computing on AWS for Beginners [2025].jpg"></div>
-                <!-- <a href="#">→</a> -->
-            </div>
-            <div class="service-card highlight">
-                <h2>The Complete Prompt Engineering for Al Bootcamp</h2>
-                <p>✦</p>
-                <div class="certificate-photo"><img src="images/Promt Engineering.jpg"></div>
-                <!-- <a href="#">→</a> -->
-            </div>
-                        <div class="service-card highlight">
-                <h2>SQL (Basics)</h2>
-                <p>✦</p>
-                <div class="certificate-photo"><img src="images/sqlbasic.png"></div>
-                <!-- <a href="#">→</a> -->
-            </div>
-                        <div class="service-card highlight">
-                <h2>SQL (Intermediate)</h2>
-                <p>✦</p>
-                <div class="certificate-photo"><img src="images/sqlin.png"></div>
-                <!-- <a href="#">→</a> -->
-            </div>
-                        <div class="service-card highlight">
-                <h2>Python (Basic)</h2>
-                <p>✦</p>
-                <div class="certificate-photo"><img src="images/pythonbasic.png"></div>
-                <!-- <a href="#">→</a> -->
-            </div>
-        </div>
-    </section>
-
-
-    <section class="section featured"  id="thesis-projects">
-    <div class="section-header">
-        <h2>✦ Projects</h2>
-        <h3>Where experience meets impact.</p>
-          </div>
-            <div>
-                <h1>Research Thesis</h1>
-                <P>Efficacy of Large Language Models in facilitating exam preparation 
+            <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                <h3 class="project-title">Research Thesis</h3>
+                <p class="project-meta">Efficacy of Large Language Models in facilitating exam preparation 
                 for medical students (using RAG). The system utilized large-scale text 
                 extraction from medical PDFs using FAISS index, data preprocessing, and LLM-based fine-tuning 
                 techniques along with prompt engineering to generate accurate, context-aware responses for students. 
-                and reduce hallucination.</P>
+                and reduce hallucination.</p>
                 <a href="https://dspace.bracu.ac.bd/xmlui/handle/10361/26705" class="btn primary">Read Paper →</a>
             </div>
-            <div>
-                <h1>The Arannya Kanon App</h1>
-                <P>A full-stack web application developed using the MERN stack, 
+
+            <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                <h3 class="project-title">The Arannya Kanon App</h3>
+                <p class="project-meta">A full-stack web application developed using the MERN stack, 
                     designed to deliver a structured and scalable user experience 
                     through a clean MVC architecture. The project focuses on modular 
                     design, maintainability, and seamless navigation by separating core 
-                    pages from the home interface.</P>
-                <a href="https://github.com/Tuunaan/CSE470_Project" class="btn primary">Arannya Kanon →</a>
+                    pages from the home interface. It is a digital platform designed to promote 
+                    awareness and engagement around nature, environment, and sustainability.</p>
+                <a href="https://github.com/Tuunaan/CSE470_Project" class="btn primary">AK-app →</a>
             </div>
-            <div>
-                <h1>Virtual Clothing Store</h1>
-                <P>An e-commerce website for clothing.</P>
+
+            <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                <h3 class="project-title">Virtual Clothing Store</h3>
+                <p class="project-meta">A simple e-commerce platform. The app enables users 
+                    to browse clothing items, preview them virtually, add products to a cart, place orders  
+                    and complete purchases using PayPal payment integration. The project focused on combining 
+                    core e-commerce features with a virtual clothing experience to enhance online shopping usability.</p>
                 <a href="https://github.com/SadAfrin/CSE471_Project" class="btn primary">VClothing →</a>
             </div>
+        </div>
     </section>
 
-
-<!-- Contact -->
-<section class="section contact" id="contact">
-  <div class="section-header">
-    <h2>✦ Contact</h2>
-    <h3>Let’s secure ideas and make an exception.</p>
-  </div>
-
-  <div class="contact-container">
-    <!-- Left: Info + Map placeholder or just text -->
-    <div class="contact-info">
-      <h3>Get in Touch</h3>
-      <p>I'm currently available for remote and on-site full-time opportunities. Feel free to reach out!</p>
-
-      <div class="info-items">
-        <div class="info-item">
-          <span class="label">Phone</span>
-          <a href="tel:+8801400489959">+8801400489959</a>
+    <!-- Contact -->
+    <section class="section contact" id="contact">
+        <div class="section-header" data-aos="fade-up">
+            <h2>✦ Contact</h2>
         </div>
-        <div class="info-item">
-          <span class="label">Email</span>
-          <a href="mailto:tabassumtunan@gmail.com">tabassumtunan@gmail.com</a>
-        </div>
-        <div class="info-item">
-          <span class="label">Linkedin</span>
-          <a href="https://www.linkedin.com/in/humayera-tabassum-tunan-b84207226/" target="_blank">humayera-tabassum-tunan</a>
-        </div>
-        <div class="info-item">
-          <span class="label">Address</span>
-          <span>ECB Chattar, Dhaka, Bangladesh</span>
-        </div>
-      </div>
-    </div>
+        <div class="contact-container">
+            <div class="contact-info" data-aos="fade-right">
+                <h3>Get in Touch</h3>
+                <p>I'm currently available for remote and on-site full-time opportunities.</p>
+                
+                <div class="info-items">
+                    <div class="info-item">
+                        <span class="label">Phone</span>
+                        <a href="tel:+8801400489959">+8801400489959</a>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">Email</span>
+                        <a href="mailto:tabassumtunan@gmail.com">tabassumtunan@gmail.com</a>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">LinkedIn</span>
+                        <a href="https://www.linkedin.com/in/humayera-tabassum-tunan-b84207226/" target="_blank">humayera-tabassum-tunan</a>
+                    </div>
+                </div>
+            </div>
 
-    <!-- Right: Contact Form -->
-    <div class="contact-form">
-      <form action="https://formsubmit.co/tabassumtunan@gmail.com" method="POST" id="contactForm">
-        <div class="form-group">
-          <input type="text" name="name" id="name" required placeholder="">
-          <label for="name">Name</label>
+            <div class="contact-form" data-aos="fade-left" data-aos-delay="200">
+                <form action="https://formsubmit.co/tabassumtunan@gmail.com" method="POST">
+                    <div class="form-group">
+                        <input type="text" name="name" required placeholder=" ">
+                        <label>Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" required placeholder=" ">
+                        <label>Email</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" rows="6" required placeholder=" "></textarea>
+                        <label>Message</label>
+                    </div>
+                    <button type="submit" class="btn primary">Send Message →</button>
+                </form>
+            </div>
         </div>
+    </section>
 
-        <div class="form-group">
-          <input type="email" name="email" id="email" required placeholder="">
-          <label for="email">Email</label>
-        </div>
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: false,
+            mirror: true,
+            offset: 100
+        });
 
-        <div class="form-group">
-          <textarea name="message" id="message" rows="6" required placeholder=""></textarea>
-          <label for="message">Message</label>
-        </div>
+        // Particles.js configuration
+        particlesJS('particles-js', {
+            particles: {
+                number: { value: 80, density: { enable: true, value_area: 800 } },
+                color: { value: '#00ffff' },
+                shape: { type: 'circle' },
+                opacity: { value: 0.5, random: true },
+                size: { value: 3, random: true },
+                line_linked: { enable: true, distance: 150, color: '#00ffff', opacity: 0.4, width: 1 },
+                move: { enable: true, speed: 1.5, direction: 'none', random: true, straight: false }
+            },
+            interactivity: {
+                events: { onhover: { enable: true, mode: 'repulse' }, onclick: { enable: true, mode: 'push' } },
+                modes: { repulse: { distance: 80 }, push: { particles_nb: 4 } }
+            }
+        });
 
-        <button type="submit" class="btn primary">Send Message →</button>
-      </form>
-    </div>
-  </div>
-</section>
-
-        
+        // Navbar hide on scroll down
+        let prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+            let currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.querySelector(".navbar").style.top = "0";
+            } else {
+                document.querySelector(".navbar").style.top = "-100px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
+    <script>
+        document.querySelectorAll('.skill-category').forEach(category => {
+            category.addEventListener('click', () => {
+                category.classList.toggle('expanded');
+            });
+        });
+    </script>
 </body>
-
-
 </html>
-
-
